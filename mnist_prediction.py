@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
 
     model = RandomForestClassifier(n_estimators=100, n_jobs=10)
-    model.fit(x_train[1:], y_train[1:])
+    model.fit(x_train, y_train)
 
     os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
     QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
